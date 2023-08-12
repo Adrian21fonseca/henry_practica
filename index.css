@@ -1,35 +1,51 @@
-* {
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(199, 199, 199, 0.184);
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
+/* Estilos para el encabezado */
 h1 {
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
-    padding: 30px;
+    color: #333;
+    margin-top: 50px;
+    font-size: 2.5em;
 }
 
+/* Estilos para la imagen principal */
 img {
-    width: 100%; 
-    height: 100%;
-    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 4px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos para el enlace "Ven y conoce mas!" */
 a {
-    display: block;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
     text-decoration: none;
-    color: black;
-    text-align: center;
-    font-size: 3em;
-    background-color: rgba(255, 0, 0, 0.273);
-    transition: 1.3s;
-    border-radius: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 a:hover {
-    background-color: rgba(255, 0, 0, 0.66);
-    transition: 1.3s;
+    background-color: #0056b3;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    img {
+        border: none;
+    }
 }

@@ -1,0 +1,75 @@
+/* Resetear estilos de navegador para una base consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Encabezado y navegación */
+  nav {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff9900;
+  }
+  
+  /* Encabezado */
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Lista de actividades */
+  ol {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  
+  ol li {
+    margin-bottom: 10px;
+  }
+  
+  /* Lista anidada */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Reglas de medios para diseño responsivo */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav a {
+      margin: 5px 0;
+    }
+  }
